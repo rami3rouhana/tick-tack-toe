@@ -90,11 +90,12 @@ const checkWin = () => {
         if(winCombo === 3) {
             if(playerTurn === 'yellow'){
                 yellowScore += 1;
+                document.getElementById("yellow-score").innerHTML = yellowScore;
             }
             else{
                 redScore += 1;
+                document.getElementById("red-score").innerHTML = redScore;
             }
-            alert(`${playerTurn} Wins!`);
         }
     });
 }
