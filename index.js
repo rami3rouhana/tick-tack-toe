@@ -5,6 +5,4 @@ let gameSetup = [[],[],[]];
 const players = ["red","yellow"];
 
 // Add players turn
-playerTurn = players[Math.random()*2];
-
-
+let playerTurn = players[Math.round(Math.random()*1)];
