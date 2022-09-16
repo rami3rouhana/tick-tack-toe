@@ -1,5 +1,5 @@
 // Add game setup
-let gameSetup = [[],[],[]];
+let gameSetup = [["red","yellow","red"],["red","yellow","red"],["red","yellow","red"]];
 
 // Add players
 const players = ["red","yellow"];
@@ -56,3 +56,16 @@ const gameRules = [
       [0,0,1]
     ]
   ]
+
+// Convert table
+
+playerSetup = [[0,0,0],[0,0,0],[0,0,0]]
+
+for(let j=0; j<gameSetup.length; j++){
+    for(let i=0; i<gameSetup.length; i++){
+        if(gameSetup[j][i] == playerTurn){
+            playerSetup[j][i] = 1;
+        }
+    }
+}
+
