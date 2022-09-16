@@ -96,53 +96,79 @@ const checkWin = () => {
             }
             alert(`${playerTurn} Wins!`);
         }
-        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
     });
 }
 
 // Event listners
-document.getElementById("top-left").addEventListener("click",() => {
+document.getElementById("top-left").addEventListener("click",(e) => {
     if(gameSetup[0][0]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[0][0]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
-document.getElementById("top-center").addEventListener("click",() => {
+document.getElementById("top-center").addEventListener("click",(e) => {
     if(gameSetup[0][1]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[0][1]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
-document.getElementById("top-right").addEventListener("click",() => {
+document.getElementById("top-right").addEventListener("click",(e) => {
     if(gameSetup[0][2]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[0][2]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
-document.getElementById("middle-left").addEventListener("click",() => {
+document.getElementById("middle-left").addEventListener("click",(e) => {
     if(gameSetup[1][0]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[1][0]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
-document.getElementById("middle-center").addEventListener("click",() => {
+document.getElementById("middle-center").addEventListener("click",(e) => {
     if(gameSetup[1][1]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[1][1]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
-document.getElementById("middle-right").addEventListener("click",() => {
+document.getElementById("middle-right").addEventListener("click",(e) => {
     if(gameSetup[1][2]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[1][2]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
-document.getElementById("bottom-left").addEventListener("click",() => {
+document.getElementById("bottom-left").addEventListener("click",(e) => {
     if(gameSetup[2][0]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[2][0]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
-document.getElementById("bottom-center").addEventListener("click",() => {
+document.getElementById("bottom-center").addEventListener("click",(e) => {
     if(gameSetup[2][1]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[2][1]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
-document.getElementById("bottom-right").addEventListener("click",() => {
+document.getElementById("bottom-right").addEventListener("click",(e) => {
     if(gameSetup[2][2]==0){
+        players.indexOf(playerTurn)==0?playerTurn="yellow":playerTurn="red";
         gameSetup[2][2]=playerTurn;
-        checkWin();}
+        checkWin();
+        e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
+    }
 })
