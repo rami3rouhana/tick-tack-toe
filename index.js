@@ -173,3 +173,11 @@ document.getElementById("bottom-right").addEventListener("click",(e) => {
         e.currentTarget.firstChild.src = `./images/${playerTurn}.png`
     }
 })
+
+// Reset Score
+document.getElementById("reset").addEventListener("click", () => {
+    redScore=0;
+    yellowScore=0;
+    document.getElementById("red-score").innerHTML = redScore;
+    document.getElementById("yellow-score").innerHTML = yellowScore;
+})
