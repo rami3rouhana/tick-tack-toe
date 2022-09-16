@@ -181,3 +181,13 @@ document.getElementById("reset").addEventListener("click", () => {
     document.getElementById("red-score").innerHTML = redScore;
     document.getElementById("yellow-score").innerHTML = yellowScore;
 })
+
+// Restart Score
+document.getElementById("restart").addEventListener("click", () => {
+    gameSetup = [[0,0,0],[0,0,0],[0,0,0]];
+    let images = document.getElementsByTagName("img");
+    images = Array.from(images);
+    images.forEach(img => {
+        img.src = "";
+    })
+})
