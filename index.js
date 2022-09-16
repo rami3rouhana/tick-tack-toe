@@ -1,3 +1,4 @@
 // Add game setup
-const gameSetup = [[],[],[]]
+let gameSetup = [[],[],[]];
 
+const players = ["red","yellow"];
